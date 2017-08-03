@@ -15,7 +15,12 @@ public class AlgorithmSort {
         heapSort(arr);
     }
 
+    /**
+     * 堆排序，每次建立最大堆，将堆顶元素与数组最后元素交换，对前面元素重新进行堆排序得到第二大值，以此类推
+     * O(nlogn)  O(nlogn)  O(nlogn) O(1) 不稳定
+     */
     private static int heapsize;
+
     private static void heapSort(int[] arr) {
         int N = arr.length;
         heapSortMain(arr, N);
